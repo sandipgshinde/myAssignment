@@ -1,0 +1,46 @@
+body{	
+	overflow: hidden;
+}
+.main{
+	.container{		
+		flex-wrap: wrap;
+		overflow: scroll;
+		float: left;
+		.item{
+			width: 200px;
+			height: 200px;
+			position: relative;
+			text-align: center;
+			margin: 5px;
+			border: #CCC solid 2px;			
+			img{
+				width: 200px;
+				height: 200px;
+			}
+			.title{
+				color: #FFF;
+				font-size: 24px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		&.portrait-cls{
+			width: 700px;
+			height: 1000px;		
+		}
+		&.landscape-cls{
+			width: 1000px;
+			height: 700px;		
+		}	
+	}
+	.mode-cls{
+		margin: 10px;
+		float: left;
+		button{
+			cursor: pointer;
+		}
+	}
+	
+}
